@@ -1,0 +1,914 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/emili/ontologies/2024/3/flysatisfaction"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/emili/ontologies/2024/3/flysatisfaction"
+     versionIRI="urn:absolute:1.0.0">
+    <Prefix name="" IRI="http://example.org/ontology#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class abbreviatedIRI=":AirBus"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":Aircraft"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":Boeing"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":Business"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":BusinessClass"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":City"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":Country"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":CoupleLeisure"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":Date"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":EconomyClass"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":FamilyLeisure"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":FirstClass"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":HightValue"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":LowValue"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":MediumValue"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":Rating"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":Recommended"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":SeatType"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":SoloTraveller"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":Survey"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI=":Traveller"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI=":hasCountry"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI=":hasDateFlight"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI=":hasDatePublished"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI=":hasDestination"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI=":hasOrigin"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI=":ratingValue"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI=":reviewDate"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI=":AirBus380"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI=":Barcelona"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI=":DateFlight"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI=":DatePublished"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI=":David"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI=":Emilio"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI=":Madrid"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI=":Spain"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI=":Survey1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI=":Survey2"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI=":Survey3"/>
+    </Declaration>
+    <Declaration>
+        <AnnotationProperty abbreviatedIRI="rdfs:sameAs"/>
+    </Declaration>
+    <SubClassOf>
+        <Class abbreviatedIRI=":AirBus"/>
+        <Class abbreviatedIRI=":Aircraft"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":Aircraft"/>
+        <Class abbreviatedIRI=":Survey"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":Boeing"/>
+        <Class abbreviatedIRI=":Aircraft"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":Business"/>
+        <Class abbreviatedIRI=":Traveller"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":BusinessClass"/>
+        <Class abbreviatedIRI=":SeatType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":City"/>
+        <Class abbreviatedIRI=":Survey"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":Country"/>
+        <Class abbreviatedIRI=":Survey"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":CoupleLeisure"/>
+        <Class abbreviatedIRI=":Traveller"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":Date"/>
+        <Class abbreviatedIRI=":Survey"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":EconomyClass"/>
+        <Class abbreviatedIRI=":SeatType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":FamilyLeisure"/>
+        <Class abbreviatedIRI=":Traveller"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":FirstClass"/>
+        <Class abbreviatedIRI=":SeatType"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":HightValue"/>
+        <Class abbreviatedIRI=":Rating"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":LowValue"/>
+        <Class abbreviatedIRI=":Rating"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":MediumValue"/>
+        <Class abbreviatedIRI=":Rating"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":Rating"/>
+        <Class abbreviatedIRI=":Survey"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":Recommended"/>
+        <Class abbreviatedIRI=":Survey"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":SeatType"/>
+        <Class abbreviatedIRI=":Survey"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":SoloTraveller"/>
+        <Class abbreviatedIRI=":Traveller"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":Survey"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI=":hasCountry"/>
+            <Class abbreviatedIRI=":Country"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":Survey"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI=":hasDateFlight"/>
+            <Class abbreviatedIRI=":Date"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":Survey"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI=":hasDatePublished"/>
+            <Class abbreviatedIRI=":Date"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":Survey"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI=":hasDestination"/>
+            <Class abbreviatedIRI=":City"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":Survey"/>
+        <ObjectExactCardinality cardinality="1">
+            <ObjectProperty abbreviatedIRI=":hasOrigin"/>
+            <Class abbreviatedIRI=":City"/>
+        </ObjectExactCardinality>
+    </SubClassOf>
+    <SubClassOf>
+        <Class abbreviatedIRI=":Traveller"/>
+        <Class abbreviatedIRI=":Survey"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class abbreviatedIRI=":AirBus"/>
+        <NamedIndividual abbreviatedIRI=":AirBus380"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI=":City"/>
+        <NamedIndividual abbreviatedIRI=":Barcelona"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI=":Date"/>
+        <NamedIndividual abbreviatedIRI=":DateFlight"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI=":Date"/>
+        <NamedIndividual abbreviatedIRI=":DatePublished"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI=":SoloTraveller"/>
+        <NamedIndividual abbreviatedIRI=":David"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI=":Business"/>
+        <NamedIndividual abbreviatedIRI=":Emilio"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI=":City"/>
+        <NamedIndividual abbreviatedIRI=":Madrid"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI=":Country"/>
+        <NamedIndividual abbreviatedIRI=":Spain"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI=":Survey"/>
+        <NamedIndividual abbreviatedIRI=":Survey1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI=":Survey"/>
+        <NamedIndividual abbreviatedIRI=":Survey2"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI=":Survey"/>
+        <NamedIndividual abbreviatedIRI=":Survey3"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI=":hasCountry"/>
+        <NamedIndividual abbreviatedIRI=":Survey1"/>
+        <NamedIndividual abbreviatedIRI=":Spain"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI=":hasDateFlight"/>
+        <NamedIndividual abbreviatedIRI=":Survey1"/>
+        <NamedIndividual abbreviatedIRI=":DateFlight"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI=":hasDatePublished"/>
+        <NamedIndividual abbreviatedIRI=":Survey1"/>
+        <NamedIndividual abbreviatedIRI=":DatePublished"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI=":hasDestination"/>
+        <NamedIndividual abbreviatedIRI=":Survey1"/>
+        <NamedIndividual abbreviatedIRI=":Madrid"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI=":hasOrigin"/>
+        <NamedIndividual abbreviatedIRI=":Survey1"/>
+        <NamedIndividual abbreviatedIRI=":Barcelona"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI=":hasCountry"/>
+        <NamedIndividual abbreviatedIRI=":Survey2"/>
+        <NamedIndividual abbreviatedIRI=":Spain"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI=":hasDateFlight"/>
+        <NamedIndividual abbreviatedIRI=":Survey2"/>
+        <NamedIndividual abbreviatedIRI=":DateFlight"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI=":hasDatePublished"/>
+        <NamedIndividual abbreviatedIRI=":Survey2"/>
+        <NamedIndividual abbreviatedIRI=":DatePublished"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI=":hasDestination"/>
+        <NamedIndividual abbreviatedIRI=":Survey2"/>
+        <NamedIndividual abbreviatedIRI=":Madrid"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI=":hasOrigin"/>
+        <NamedIndividual abbreviatedIRI=":Survey2"/>
+        <NamedIndividual abbreviatedIRI=":Barcelona"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI=":hasCountry"/>
+        <NamedIndividual abbreviatedIRI=":Survey3"/>
+        <NamedIndividual abbreviatedIRI=":Spain"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI=":hasDateFlight"/>
+        <NamedIndividual abbreviatedIRI=":Survey3"/>
+        <NamedIndividual abbreviatedIRI=":DateFlight"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI=":hasDatePublished"/>
+        <NamedIndividual abbreviatedIRI=":Survey3"/>
+        <NamedIndividual abbreviatedIRI=":DatePublished"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI=":hasDestination"/>
+        <NamedIndividual abbreviatedIRI=":Survey3"/>
+        <NamedIndividual abbreviatedIRI=":Madrid"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI=":hasOrigin"/>
+        <NamedIndividual abbreviatedIRI=":Survey3"/>
+        <NamedIndividual abbreviatedIRI=":Barcelona"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI=":ratingValue"/>
+        <NamedIndividual abbreviatedIRI=":Survey1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">7</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI=":reviewDate"/>
+        <NamedIndividual abbreviatedIRI=":Survey1"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">2024-04-11T14:00:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI=":ratingValue"/>
+        <NamedIndividual abbreviatedIRI=":Survey2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">9</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI=":reviewDate"/>
+        <NamedIndividual abbreviatedIRI=":Survey2"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">2024-04-11T14:00:00</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI=":ratingValue"/>
+        <NamedIndividual abbreviatedIRI=":Survey3"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI=":reviewDate"/>
+        <NamedIndividual abbreviatedIRI=":Survey3"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#dateTime">2024-04-11T14:00:00</Literal>
+    </DataPropertyAssertion>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI=":hasCountry"/>
+        <Class abbreviatedIRI=":Survey"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI=":hasDateFlight"/>
+        <Class abbreviatedIRI=":Survey"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI=":hasDatePublished"/>
+        <Class abbreviatedIRI=":Survey"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI=":hasDestination"/>
+        <Class abbreviatedIRI=":Survey"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty abbreviatedIRI=":hasOrigin"/>
+        <Class abbreviatedIRI=":Survey"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI=":hasCountry"/>
+        <Class abbreviatedIRI=":Country"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI=":hasDateFlight"/>
+        <Class abbreviatedIRI=":Date"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI=":hasDatePublished"/>
+        <Class abbreviatedIRI=":Date"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI=":hasDestination"/>
+        <Class abbreviatedIRI=":City"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty abbreviatedIRI=":hasOrigin"/>
+        <Class abbreviatedIRI=":City"/>
+    </ObjectPropertyRange>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI=":ratingValue"/>
+        <Class abbreviatedIRI=":Survey"/>
+    </DataPropertyDomain>
+    <DataPropertyDomain>
+        <DataProperty abbreviatedIRI=":reviewDate"/>
+        <Class abbreviatedIRI=":Survey"/>
+    </DataPropertyDomain>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI=":ratingValue"/>
+        <Datatype abbreviatedIRI="xsd:integer"/>
+    </DataPropertyRange>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI=":reviewDate"/>
+        <Datatype abbreviatedIRI="xsd:dateTime"/>
+    </DataPropertyRange>
+    <DLSafeRule>
+        <Body>
+            <ClassAtom>
+                <Class abbreviatedIRI=":Survey"/>
+                <Variable IRI="urn:swrl:var#s"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty abbreviatedIRI=":ratingValue"/>
+                <Variable IRI="urn:swrl:var#s"/>
+                <Variable IRI="urn:swrl:var#rating"/>
+            </DataPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#greaterThanOrEqual">
+                <Variable IRI="urn:swrl:var#rating"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">5</Literal>
+            </BuiltInAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#lessThanOrEqual">
+                <Variable IRI="urn:swrl:var#rating"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">7</Literal>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class abbreviatedIRI=":MediumValue"/>
+                <Variable IRI="urn:swrl:var#s"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Body>
+            <ClassAtom>
+                <Class abbreviatedIRI=":Survey"/>
+                <Variable IRI="urn:swrl:var#s"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty abbreviatedIRI=":ratingValue"/>
+                <Variable IRI="urn:swrl:var#s"/>
+                <Variable IRI="urn:swrl:var#rating"/>
+            </DataPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#greaterThanOrEqual">
+                <Variable IRI="urn:swrl:var#rating"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">8</Literal>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class abbreviatedIRI=":HightValue"/>
+                <Variable IRI="urn:swrl:var#s"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <DLSafeRule>
+        <Body>
+            <ClassAtom>
+                <Class abbreviatedIRI=":Survey"/>
+                <Variable IRI="urn:swrl:var#s"/>
+            </ClassAtom>
+            <DataPropertyAtom>
+                <DataProperty abbreviatedIRI=":ratingValue"/>
+                <Variable IRI="urn:swrl:var#s"/>
+                <Variable IRI="urn:swrl:var#rating"/>
+            </DataPropertyAtom>
+            <BuiltInAtom IRI="http://www.w3.org/2003/11/swrlb#lessThan">
+                <Variable IRI="urn:swrl:var#rating"/>
+                <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#integer">5</Literal>
+            </BuiltInAtom>
+        </Body>
+        <Head>
+            <ClassAtom>
+                <Class abbreviatedIRI=":LowValue"/>
+                <Variable IRI="urn:swrl:var#s"/>
+            </ClassAtom>
+        </Head>
+    </DLSafeRule>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>:AirBus</AbbreviatedIRI>
+        <Literal>A European multinational aerospace corporation</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:AirBus</AbbreviatedIRI>
+        <Literal>AirBus</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>:AirBus380</AbbreviatedIRI>
+        <Literal>Type of plane</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:AirBus380</AbbreviatedIRI>
+        <Literal>AirBus380</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:sameAs"/>
+        <AbbreviatedIRI>:AirBus380</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#anyURI">https://dbpedia.org/page/Airbus_A380</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>:Aircraft</AbbreviatedIRI>
+        <Literal>The type or model of airplane used for a flight</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:Aircraft</AbbreviatedIRI>
+        <Literal>Aircraft</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>:Barcelona</AbbreviatedIRI>
+        <Literal>City</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:Barcelona</AbbreviatedIRI>
+        <Literal>Barcelona</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:sameAs"/>
+        <AbbreviatedIRI>:Barcelona</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#anyURI">https://dbpedia.org/page/List_of_international_airports_by_country</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>:Boeing</AbbreviatedIRI>
+        <Literal>An American multinational corporation that designs</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:Boeing</AbbreviatedIRI>
+        <Literal>Boeing</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>:Business</AbbreviatedIRI>
+        <Literal>A traveller flying for business purposes</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:Business</AbbreviatedIRI>
+        <Literal>Business</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>:BusinessClass</AbbreviatedIRI>
+        <Literal>A class offering enhanced comfort, service, and amenities, targeted at business travellers or those seeking a premium experience</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:BusinessClass</AbbreviatedIRI>
+        <Literal>BusinessClass</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>:City</AbbreviatedIRI>
+        <Literal>A designated area or locality within a country</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:City</AbbreviatedIRI>
+        <Literal>City</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>:Country</AbbreviatedIRI>
+        <Literal>A designated area or locality within a country</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:Country</AbbreviatedIRI>
+        <Literal>Country</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>:CoupleLeisure</AbbreviatedIRI>
+        <Literal>A pair of travellers on leisure, often sharing experiences and feedback about their journey</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:CoupleLeisure</AbbreviatedIRI>
+        <Literal>CoupleLeisure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>:Date</AbbreviatedIRI>
+        <Literal>The date on which the flight is scheduled to occur</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:Date</AbbreviatedIRI>
+        <Literal>Date</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>:DateFlight</AbbreviatedIRI>
+        <Literal>Date of flight</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:DateFlight</AbbreviatedIRI>
+        <Literal>DateFlight</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>:DatePublished</AbbreviatedIRI>
+        <Literal>Date of published</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:DatePublished</AbbreviatedIRI>
+        <Literal>DatePublished</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>:David</AbbreviatedIRI>
+        <Literal>Traveller</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:David</AbbreviatedIRI>
+        <Literal>David</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>:EconomyClass</AbbreviatedIRI>
+        <Literal>The basic seating class, offering standard services and amenities</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:EconomyClass</AbbreviatedIRI>
+        <Literal>EconomyClass</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>:Emilio</AbbreviatedIRI>
+        <Literal>Traveller</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:Emilio</AbbreviatedIRI>
+        <Literal>Emilio</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>:FamilyLeisure</AbbreviatedIRI>
+        <Literal>Travellers flying as a family unit, including adults and children, with specific needs for their travel experience</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:FamilyLeisure</AbbreviatedIRI>
+        <Literal>FamilyLeisure</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>:FirstClass</AbbreviatedIRI>
+        <Literal>The highest level of service and comfort on a flight, with exclusive amenities and personalized services</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:FirstClass</AbbreviatedIRI>
+        <Literal>FirstClass</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>:HightValue</AbbreviatedIRI>
+        <Literal>Indicates items, assessments, or entities that are of superior quality or importance</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:HightValue</AbbreviatedIRI>
+        <Literal>HighValue</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>:LowValue</AbbreviatedIRI>
+        <Literal>Signifies items, assessments, or entities that fall short in terms of quality, performance, or satisfaction</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:LowValue</AbbreviatedIRI>
+        <Literal>LowValue</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>:Madrid</AbbreviatedIRI>
+        <Literal>City</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:Madrid</AbbreviatedIRI>
+        <Literal>Madrid</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:sameAs"/>
+        <AbbreviatedIRI>:Madrid</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#anyURI">https://dbpedia.org/page/List_of_international_airports_by_country</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>:MediumValue</AbbreviatedIRI>
+        <Literal>Denotes items, assessments, or entities that meet general expectations in quality and performance but do not reach the highest standards</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:MediumValue</AbbreviatedIRI>
+        <Literal>MediumValue</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>:Rating</AbbreviatedIRI>
+        <Literal>A numeric score or qualitative assessment given to a service feature, flight, or airline overall</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:Rating</AbbreviatedIRI>
+        <Literal>Rating</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>:Recommended</AbbreviatedIRI>
+        <Literal>Indicates whether a reviewer recommends the airline or flight based on their experience</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:Recommended</AbbreviatedIRI>
+        <Literal>Recommended</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>:SeatType</AbbreviatedIRI>
+        <Literal>The class or type of seating chosen by the traveller, affecting comfort and amenities</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:SeatType</AbbreviatedIRI>
+        <Literal>SeatType</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>:SoloTraveller</AbbreviatedIRI>
+        <Literal>A traveller who flies alone</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:SoloTraveller</AbbreviatedIRI>
+        <Literal>SoloTraveller</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:Spain</AbbreviatedIRI>
+        <Literal>Country</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:Spain</AbbreviatedIRI>
+        <Literal>Spain</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:sameAs"/>
+        <AbbreviatedIRI>:Spain</AbbreviatedIRI>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#anyURI">https://dbpedia.org/page/Category:Countries</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>:Survey</AbbreviatedIRI>
+        <Literal>A collection or set of questions aimed at gathering information from respondents to derive insights on various topics</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:Survey</AbbreviatedIRI>
+        <Literal>Survey</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>:Traveller</AbbreviatedIRI>
+        <Literal>An individual who travels</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:Traveller</AbbreviatedIRI>
+        <Literal>Traveller</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>:hasCountry</AbbreviatedIRI>
+        <Literal>Specifies the country associated with an entity</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:hasCountry</AbbreviatedIRI>
+        <Literal>hasCountry</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>:hasDateFlight</AbbreviatedIRI>
+        <Literal>Specifies the exact date associated with an event</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:hasDateFlight</AbbreviatedIRI>
+        <Literal>hasDateFlight</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>:hasDatePublished</AbbreviatedIRI>
+        <Literal>&quot;Specifies the exact date associated with a review</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:hasDatePublished</AbbreviatedIRI>
+        <Literal>hasDatePublished</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>:hasDestination</AbbreviatedIRI>
+        <Literal>This property defines the end point of a flight</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:hasDestination</AbbreviatedIRI>
+        <Literal>hasDestination</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>:hasOrigin</AbbreviatedIRI>
+        <Literal>This property specifies the starting point of a flight</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:hasOrigin</AbbreviatedIRI>
+        <Literal>hasOrigin</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>:ratingValue</AbbreviatedIRI>
+        <Literal>Numerical rating given to an airline, flight, or service, usually on a scale from 1 to 10</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:ratingValue</AbbreviatedIRI>
+        <Literal>ratingValue</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <AbbreviatedIRI>:reviewDate</AbbreviatedIRI>
+        <Literal>The date on which the review was published</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>:reviewDate</AbbreviatedIRI>
+        <Literal>reviewDate</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+
